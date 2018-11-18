@@ -4,15 +4,15 @@
 #
 Name     : libcdr
 Version  : 0.1.4
-Release  : 1
+Release  : 2
 URL      : https://dev-www.libreoffice.org/src/libcdr-0.1.4.tar.xz
 Source0  : https://dev-www.libreoffice.org/src/libcdr-0.1.4.tar.xz
 Summary  : Library for importing and converting Corel Draw Documents
 Group    : Development/Tools
 License  : MPL-2.0 MPL-2.0-no-copyleft-exception
-Requires: libcdr-bin
-Requires: libcdr-lib
-Requires: libcdr-license
+Requires: libcdr-bin = %{version}-%{release}
+Requires: libcdr-lib = %{version}-%{release}
+Requires: libcdr-license = %{version}-%{release}
 BuildRequires : boost-dev
 BuildRequires : doxygen
 BuildRequires : pkgconfig(cppunit)
@@ -29,7 +29,7 @@ libcdr is a library for reading and converting CDR images
 %package bin
 Summary: bin components for the libcdr package.
 Group: Binaries
-Requires: libcdr-license
+Requires: libcdr-license = %{version}-%{release}
 
 %description bin
 bin components for the libcdr package.
@@ -38,9 +38,9 @@ bin components for the libcdr package.
 %package dev
 Summary: dev components for the libcdr package.
 Group: Development
-Requires: libcdr-lib
-Requires: libcdr-bin
-Provides: libcdr-devel
+Requires: libcdr-lib = %{version}-%{release}
+Requires: libcdr-bin = %{version}-%{release}
+Provides: libcdr-devel = %{version}-%{release}
 
 %description dev
 dev components for the libcdr package.
@@ -57,7 +57,7 @@ doc components for the libcdr package.
 %package lib
 Summary: lib components for the libcdr package.
 Group: Libraries
-Requires: libcdr-license
+Requires: libcdr-license = %{version}-%{release}
 
 %description lib
 lib components for the libcdr package.
@@ -79,7 +79,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1534624707
+export SOURCE_DATE_EPOCH=1542499907
 %configure --disable-static
 make  %{?_smp_mflags}
 
@@ -91,10 +91,10 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1534624707
+export SOURCE_DATE_EPOCH=1542499907
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/libcdr
-cp COPYING.MPL %{buildroot}/usr/share/doc/libcdr/COPYING.MPL
+mkdir -p %{buildroot}/usr/share/package-licenses/libcdr
+cp COPYING.MPL %{buildroot}/usr/share/package-licenses/libcdr/COPYING.MPL
 %make_install
 
 %files
@@ -128,5 +128,5 @@ cp COPYING.MPL %{buildroot}/usr/share/doc/libcdr/COPYING.MPL
 /usr/lib64/libcdr-0.1.so.1.0.4
 
 %files license
-%defattr(-,root,root,-)
-/usr/share/doc/libcdr/COPYING.MPL
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/libcdr/COPYING.MPL
