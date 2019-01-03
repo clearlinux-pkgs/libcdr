@@ -1,3 +1,224 @@
+2018-12-29  David Tardon  <dtardon@redhat.com>  [49d924f6e575cedbc41167736a12f0b725b52245]
+
+	fix var name
+
+	Change-Id: I7bd39a4aa5b7dd0a267225787463804c7e274ec6
+
+2018-12-29  David Tardon  <dtardon@redhat.com>  [b0a68c8aa31a1417115bdc6b46d904291734a8ce]
+
+	put the flags to a single line
+
+	Change-Id: I1d35d7c6fcced11fc89ce0c9c8a874399c7462d9
+
+2018-12-29  David Tardon  <dtardon@redhat.com>  [93f7c78e02dd4d4939411abb039afc75872b5c4f]
+
+	prepare for a release
+
+	Change-Id: I7f0864a3830e3ec9a0aa1924ccbd146eebcab875
+
+2018-12-28  David Tardon  <dtardon@redhat.com>  [b719dfdcabb43114553d02eeb9c91728ef835a48]
+
+	avoid reading past the end of data buffer
+
+	Change-Id: Ie91f77b68eed686890b2b6346c6f97c4e4ac4ca1
+
+2018-12-28  David Tardon  <dtardon@redhat.com>  [ac478ec40afbded9c2f9dd14519caf575ed72af9]
+
+	ofz#8328 avoid reading past the end of data buffer
+
+	Change-Id: I20d9f1aa723dc113e62ae7014bfaa1a61df693d2
+
+2018-12-28  David Tardon  <dtardon@redhat.com>  [325b61ab177abb4328dafa36eb99391b9afb5fcd]
+
+	fix project name in license header
+
+	Change-Id: I3c31dbcc1c669758ed1e7624cc0a136c2946d3e8
+
+2018-12-27  David Tardon  <dtardon@redhat.com>  [f0f24b6ef07e50d09a4f71180b132f5e6234e2fe]
+
+	check for __attribute__((visibility)) too
+
+	Change-Id: Icf5f2a52cc046cf42d0feb7e5bcb993f426b83e1
+
+2018-05-05  David Tardon  <dtardon@redhat.com>  [93f8e7405e4a852a2908c011456719dc8e3033e6]
+
+	disable werror by default
+
+	Change-Id: I56bc2296c8705ac0c9c475aa1cf76baa5dddac83
+
+2018-03-27  David Tardon  <dtardon@redhat.com>  [4d3c9a8ca4a0390965c2ebae4e263a4af566e206]
+
+	ofz#7119 avoid setting ref to a temp. var.
+
+	Change-Id: I9f91a4e892867ce45f3bd0450ee323a45c42ecd3
+
+2018-03-24  David Tardon  <dtardon@redhat.com>  [517dbbed46ee34710d0346dbe84c9fbe6a426e7d]
+
+	drop unused headers
+
+	Change-Id: I44a999f25ea14a73737019350d40dd4ebb982854
+
+2018-03-24  David Tardon  <dtardon@redhat.com>  [7c9f013d8924407c88515533a1a5703282b075dc]
+
+	use unique_ptr
+
+	Change-Id: I8954729882f578f59ec15bef193737736281a940
+
+2018-03-24  David Tardon  <dtardon@redhat.com>  [fe04e802d5be570709a07d40237ef6bf468578f7]
+
+	use unique_ptr
+
+	Change-Id: I4b1dafc395c8dc2a891ea6541abfee23e30b2353
+
+2018-03-24  David Tardon  <dtardon@redhat.com>  [7807ebc00aafe62d8c54f66c1297e49e48f9cc43]
+
+	use shared_ptr
+
+	Change-Id: I40a15f55f3681bc8a70a079d8ee8a80c748639df
+
+2018-03-24  David Tardon  <dtardon@redhat.com>  [7bd7f56e86d5f6b87d402c34072d4054474ae473]
+
+	put the whole impl. in libcdr namespace
+
+	Change-Id: Id0571b26ed037c5ec9d455599d96bad6eaf8ae3d
+
+2018-03-24  David Tardon  <dtardon@redhat.com>  [53426f781068a9d72456b020223569d4d52252c0]
+
+	put the whole impl. in libcdr namespace
+
+	Change-Id: Ibf8e335d7ca43e1c6405da5d2137744ca995df47
+
+2018-03-24  David Tardon  <dtardon@redhat.com>  [add9661aace5a96ca17976dad48a057ca4b548c3]
+
+	use unique_ptr
+
+	Change-Id: I83187bbbbe3c0dfdf7d1c4c59ddd4d8679ae9018
+
+2018-03-24  David Tardon  <dtardon@redhat.com>  [f2de6ec61fac666f2093fd25533df26cd610bde7]
+
+	reduce the amount of copypasta
+
+	Change-Id: I03f35156e7aa006d515e866009b03ce825c19dab
+
+2018-03-17  David Tardon  <dtardon@redhat.com>  [10fa0f73c0cf39bc03a39e08c49084ed7bc9ac9e]
+
+	ofz#6948 ensure pattern dims are initialized
+
+	Change-Id: Id03ebbaadf8e6a5b752b429da19639f024bbba86
+
+2018-03-12  David Tardon  <dtardon@redhat.com>  [6c957a8bb3639bd47a8b697e665772ce84baf788]
+
+	speed up angle normalization
+
+	Change-Id: I788422726995f95eb3d040978887fb0dcf647ebf
+
+2018-02-02  David Tardon  <dtardon@redhat.com>  [1e903849a5166728f37ed4604b953f7d6d40574c]
+
+	include own headers first
+
+	Change-Id: I23299ee382d556bb13554d8a7a06135ee6b45fae
+
+2018-02-02  David Tardon  <dtardon@redhat.com>  [806ae992ed9b585225115d91599e1a50bb4a9d7f]
+
+	iwyu: prune includes
+
+	Change-Id: Ie32a55488f4acffa2dd11109a230f5ce3a7acdb0
+
+2018-01-31  David Tardon  <dtardon@redhat.com>  [dc5e9b17437c52af805e6674fbcd9a31e4ffd987]
+
+	ofz#5845 limit max. record nesting depth
+
+	... to avoid stack overflow.
+
+	Change-Id: I2d0f01a14499e1e4d6543fc9db8beb14a2ea0644
+
+2018-01-19  David Tardon  <dtardon@redhat.com>  [6568138767bcb1fe88c6331389d1d2dc2757780a]
+
+	ofz#3494 use correct tag offset for seek
+
+	Change-Id: Ic0fc8fc9d10c2a0fb14fb5b0388ba8cfe5c68463
+
+2018-01-19  David Tardon  <dtardon@redhat.com>  [9d1b9ec71a91fc8f3450c58937cd3fd76e6cb68e]
+
+	fix seek to the next tag
+
+	The old code would use the length of the _preceding_ tag to determine
+	the offset of the next tag. At best, it would just read the first tag in
+	the sequence twice (the initial length is 0, so after reading the first
+	tag, it would seek back to it).
+
+	Change-Id: Ic10a2246a02bd27832b1c6aa478e43f40a6ef9d3
+
+2018-01-19  David Tardon  <dtardon@redhat.com>  [8e60690a1e5e2c5eb3a644f093176f9ba9ac3293]
+
+	ofz#5454 fix stack overflow
+
+	Change-Id: I8db432d1338d50d36a60a6a85612088a5d65b359
+
+2018-01-10  David Tardon  <dtardon@redhat.com>  [786a66f23c75ad9873afcb2a292a6fcc69d0deac]
+
+	ofz#4961 fix division by 0
+
+	Change-Id: Ie9eca0bbf540adb98505215e1017b636626fbfe9
+
+2018-01-01  David Tardon  <dtardon@redhat.com>  [8856825330f3a1fc4ef3fbf75c731158f3ea81ed]
+
+	simplify dist and inst. of headers
+
+	Change-Id: I109e1b8ec3d1591aa9abe14cfedf05b0129104ad
+
+2017-11-27  Miklos Vajna  <vmiklos@collabora.co.uk>  [e646d40f53bfb112abfd8153268665f73153b00c]
+
+	CMXParser: remove never read length / maxLength
+
+	Technically both were read and written at least once so the compiler did
+	not warn on them; but in practice these are unused. Leave the readU32()
+	call there, though -- as it has a side effect.
+
+	Change-Id: I24240ef216b6ce18d792594ff77fad46e6688508
+
+2017-11-06  Miklos Vajna  <vmiklos@collabora.co.uk>  [597d8bcb89cbedad5ba6009ad04ea43bf01188d3]
+
+	Use auto when declaring iterators and when initializing with a cast
+
+	Change-Id: Ife4f3562d0c655de8623870600b0e6bb7f1f12dc
+
+2017-10-31  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [69236603f705f39ad031dbac40eced4072afdfd0]
+
+	doxygen -u
+
+	Change-Id: I8bc533a2b6e5ca7e935cde7bf2e00ae86224a95b
+
+2017-10-28  David Tardon  <dtardon@redhat.com>  [6699a15d53cef9b9c2d4be5cef9ce3da0ceed811]
+
+	save some vertical space
+
+	Change-Id: I0d2f4809f01fa775fb457834ef58836c3d5d0b4e
+
+2017-10-28  David Tardon  <dtardon@redhat.com>  [20fb9fae511cb9b949df955519b05eaf9788f510]
+
+	rely on pkg-config to find zlib
+
+	Change-Id: Ic657c855799b0743a0a1a58b29536becf3c4c873
+
+2017-10-28  David Tardon  <dtardon@redhat.com>  [4321e230195cce1461ce6d510ed4ccf0848ed9bd]
+
+	drop outdated MSVC project files
+
+	Change-Id: I3b496c4f640c83032e14a12f72f0e949dc157b3f
+
+2017-09-28  David Tardon  <dtardon@redhat.com>  [aaae42c47cf37aea717552b71e216833de4c1005]
+
+	avoid output from fuzzers
+
+	Change-Id: I5576cf0571e89cd0338df38bd15e0abce0488195
+
+2017-09-15  David Tardon  <dtardon@redhat.com>  [26a3e117cab82f3c7bd9d3cedf6ad8d99a6b481d]
+
+	bump release
+
+	Change-Id: I151034df3bf10f7dd3aa714939c7f6a287a2d422
+
 2017-09-15  David Tardon  <dtardon@redhat.com>  [30fa9bc78c1112ebb0a6778d0b8120b9a1fa8ab5]
 
 	cid#1371577 sanitize loop bounds
