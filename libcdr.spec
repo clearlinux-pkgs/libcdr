@@ -4,7 +4,7 @@
 #
 Name     : libcdr
 Version  : 0.1.5
-Release  : 5
+Release  : 6
 URL      : https://dev-www.libreoffice.org/src/libcdr-0.1.5.tar.xz
 Source0  : https://dev-www.libreoffice.org/src/libcdr-0.1.5.tar.xz
 Summary  : Library for importing and converting Corel Draw Documents
@@ -74,17 +74,18 @@ license components for the libcdr package.
 
 %prep
 %setup -q -n libcdr-0.1.5
+cd %{_builddir}/libcdr-0.1.5
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1566839580
+export SOURCE_DATE_EPOCH=1592623255
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
-export FCFLAGS="$CFLAGS -fno-lto "
-export FFLAGS="$CFLAGS -fno-lto "
+export FCFLAGS="$FFLAGS -fno-lto "
+export FFLAGS="$FFLAGS -fno-lto "
 export CXXFLAGS="$CXXFLAGS -fno-lto "
 %configure --disable-static
 make  %{?_smp_mflags}
@@ -97,10 +98,10 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1566839580
+export SOURCE_DATE_EPOCH=1592623255
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/libcdr
-cp COPYING.MPL %{buildroot}/usr/share/package-licenses/libcdr/COPYING.MPL
+cp %{_builddir}/libcdr-0.1.5/COPYING.MPL %{buildroot}/usr/share/package-licenses/libcdr/9744cedce099f727b327cd9913a1fdc58a7f5599
 %make_install
 
 %files
@@ -135,4 +136,4 @@ cp COPYING.MPL %{buildroot}/usr/share/package-licenses/libcdr/COPYING.MPL
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/libcdr/COPYING.MPL
+/usr/share/package-licenses/libcdr/9744cedce099f727b327cd9913a1fdc58a7f5599
