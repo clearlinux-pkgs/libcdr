@@ -5,7 +5,7 @@
 #
 Name     : libcdr
 Version  : 0.1.7
-Release  : 9
+Release  : 10
 URL      : https://dev-www.libreoffice.org/src/libcdr-0.1.7.tar.xz
 Source0  : https://dev-www.libreoffice.org/src/libcdr-0.1.7.tar.xz
 Summary  : Library for importing and converting Corel Draw Documents
