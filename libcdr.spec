@@ -5,7 +5,7 @@
 #
 Name     : libcdr
 Version  : 0.1.7
-Release  : 10
+Release  : 11
 URL      : https://dev-www.libreoffice.org/src/libcdr-0.1.7.tar.xz
 Source0  : https://dev-www.libreoffice.org/src/libcdr-0.1.7.tar.xz
 Summary  : Library for importing and converting Corel Draw Documents
@@ -89,7 +89,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1683816701
+export SOURCE_DATE_EPOCH=1685636437
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -118,7 +118,7 @@ cd ../buildavx2;
 make %{?_smp_mflags} check || :
 
 %install
-export SOURCE_DATE_EPOCH=1683816701
+export SOURCE_DATE_EPOCH=1685636437
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/libcdr
 cp %{_builddir}/libcdr-%{version}/COPYING.MPL %{buildroot}/usr/share/package-licenses/libcdr/9744cedce099f727b327cd9913a1fdc58a7f5599 || :
@@ -148,7 +148,6 @@ popd
 
 %files dev
 %defattr(-,root,root,-)
-/V3/usr/lib64/libcdr-0.1.so
 /usr/include/libcdr-0.1/libcdr/CDRDocument.h
 /usr/include/libcdr-0.1/libcdr/CMXDocument.h
 /usr/include/libcdr-0.1/libcdr/libcdr.h
@@ -162,7 +161,6 @@ popd
 
 %files lib
 %defattr(-,root,root,-)
-/V3/usr/lib64/libcdr-0.1.so.1
 /V3/usr/lib64/libcdr-0.1.so.1.0.7
 /usr/lib64/libcdr-0.1.so.1
 /usr/lib64/libcdr-0.1.so.1.0.7
